@@ -6,6 +6,9 @@ This is a complete **React + Express + WebSocket** implementation featuring real
 
 ## 🎬 App Showcase
 
+test
+![](./2.mp4)
+
 ### Complete System Demo
 
 _Full walkthrough of all features including gate operations, admin dashboard, and checkout flow_
@@ -18,8 +21,6 @@ _Full walkthrough of all features including gate operations, admin dashboard, an
 ### User Workflows Demo
 
 _Focused demonstration of visitor and subscriber flows with gate animations_
-test
-![](./2.mp4)
 
 <video width="100%" controls>
   <source src="./2.mp4" type="video/mp4">
