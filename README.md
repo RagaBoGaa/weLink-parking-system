@@ -4,6 +4,26 @@
 
 This is a complete **React + Express + WebSocket** implementation featuring real-time updates, animated gate interactions, comprehensive admin management, and production-ready business logic.
 
+## 🎬 App Showcase
+
+### Complete System Demo
+
+_Full walkthrough of all features including gate operations, admin dashboard, and checkout flow_
+
+<video width="100%" controls>
+  <source src="./public/1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### User Workflows Demo
+
+_Focused demonstration of visitor and subscriber flows with gate animations_
+
+<video width="100%" controls>
+  <source src="./public/2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## 🎯 Overview
