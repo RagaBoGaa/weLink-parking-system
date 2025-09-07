@@ -151,6 +151,38 @@ const GateScreen = () => {
     }
   }, [zonesData]);
 
+  // Clear selected zone when subscription changes to one without access
+  useEffect(() => {
+    if (selectedZone && activeTab === 'subscriber') {
+      // If there's a subscription error, clear the zone
+      if (subscriptionError) {
+        setSelectedZone(null);
+        return;
+      }
+
+      // If subscription data exists but category doesn't match, clear the zone
+      if (
+        subscriptionData &&
+        subscriptionData.category !== selectedZone.categoryId
+      ) {
+        setSelectedZone(null);
+        return;
+      }
+
+      // If subscription ID is cleared/empty, clear the zone
+      if (!debouncedSubscriptionId) {
+        setSelectedZone(null);
+        return;
+      }
+    }
+  }, [
+    subscriptionData,
+    subscriptionError,
+    selectedZone,
+    activeTab,
+    debouncedSubscriptionId,
+  ]);
+
   const currentGate = gatesData?.find((gate) => gate.id === gateId);
 
   const handleZoneSelect = (zone: Zone) => {
@@ -254,7 +286,11 @@ const GateScreen = () => {
           selectedZone={selectedZone}
           onZoneSelect={handleZoneSelect}
           activeTab={activeTab}
-          subscriptionCategory={subscriptionData?.category}
+          subscriptionCategory={
+            subscriptionData?.category && !subscriptionError
+              ? subscriptionData.category
+              : undefined
+          }
           connectionStatus={connectionStatus}
           currentTime={currentTime}
           onReconnect={() => websocket.reset()}

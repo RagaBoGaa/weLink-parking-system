@@ -62,7 +62,7 @@ export const SubscriptionVerification = ({
             placeholder='Enter your subscription ID'
           />
 
-          {subscriptionData && debouncedValue && (
+          {subscriptionData && debouncedValue && !subscriptionError && (
             <div className='flex items-center space-x-2 p-3 bg-success/10 rounded-xl'>
               <CheckCircle className='h-5 w-5 text-success' />
               <div>

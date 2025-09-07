@@ -1,5 +1,3 @@
-// Parking System Types based on API Documentation
-
 export interface User {
   id: string;
   username: string;
