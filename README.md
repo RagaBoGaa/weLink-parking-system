@@ -10,10 +10,7 @@ This is a complete **React + Express + WebSocket** implementation featuring real
 
 _Full walkthrough of all features including gate operations, admin dashboard, and checkout flow_
 
-<video width="100%" controls>
-  <source src="https://vimeo.com/1116537145" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the demo](https://img.shields.io/badge/▶-Watch%20Demo-red)](https://vimeo.com/1116537145)
 
 ### User Workflows Demo
 
