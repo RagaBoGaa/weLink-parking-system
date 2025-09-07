@@ -16,10 +16,7 @@ _Full walkthrough of all features including gate operations, admin dashboard, an
 
 _Focused demonstration of visitor and subscriber flows with gate animations_
 
-<video width="100%" controls>
-  <source src="https://vimeo.com/1116537386" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the demo](https://img.shields.io/badge/▶-Watch%20Demo-red)](https://vimeo.com/1116537386)
 
 ---
 
